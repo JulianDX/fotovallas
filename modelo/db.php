@@ -2,10 +2,10 @@
 
 <?php  
     
-            $server = 'sql104.epizy.com';
-            $username = 'epiz_32854319';
-            $password = 'JNq5pV9m1sbfq';
-            $dbname = 'epiz_32854319_fotovallas';       
+            $server = 'us-east.connect.psdb.cloud';
+            $username = '784rxx4ieqbjxyn1za4a';
+            $password = 'pscale_pw_fNx3q86KWJbgh8h9CE6O8MnGGyKqKFAxz7U3OOAm1ea';
+            $dbname = 'fotovallas';       
             try {
                 $db = mysqli_connect($server, $username, $password, $dbname);
                 $db->set_charset("utf8");
