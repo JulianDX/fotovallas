@@ -1,0 +1,591 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+header{
+    width: 100%;
+    height: 5rem;
+}
+
+input{
+    display: block;
+    width: 83%;
+    margin: 0 auto;
+}
+
+input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]){
+    padding: .8rem;
+    border: 1px solid gray;
+    border-radius: 7px;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]):first-child{
+    margin-top: 1.7rem;
+}
+
+input[type="submit"]{
+    border: none;
+    background-color: rgba(57, 65, 69, 0.863);
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    width: 90%;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: rgba(76, 84, 88, 0.863);
+}
+
+img{
+    max-width: 90%;
+}
+
+label{
+    font-weight: bold;
+}
+
+fieldset{
+    padding: 2rem;
+}
+
+input[type="checkbox"]{
+    vertical-align:middle;
+}
+
+option{
+    font-size: 1.1rem;
+}
+
+
+.solo-lectura{
+    background-color: rgb(241, 240, 240);
+}
+
+.alerta{
+    background-color: rgb(118, 169, 95);
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: .8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+
+.alerta2{
+    background-color: rgb(225, 49, 49);
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: .8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.logo{
+    max-width: 200%;
+    float: right;
+}
+
+.boton, .boton-cotizar{
+    border: none;
+    background-color: rgb(69, 69, 79);
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    text-align: center;
+    font-size: 1.1rem;
+    border-radius: 0.4rem;
+    margin: 10px auto 0 auto;
+    display: block;
+}
+
+.boton-cotizar{
+    background-color: rgb(16, 105, 188);
+}
+
+.boton-cotizar:hover{
+    background-color: rgb(41, 125, 203);
+}
+
+.boton:hover{
+    background-color: rgba(85, 85, 86);
+}
+
+.botones{
+    max-width: 90%;
+    margin: 3rem auto 0 auto;
+}
+
+.imagen-principal{
+    margin-top: 2.5rem;
+    background-color: black;
+    position: relative;
+    background-image: url(../img/impresora.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+    vertical-align: middle;
+    background-position: center center;
+}
+
+.contenido-banner {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contenido-header{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .contenido-header a{
+    color: white;
+    font-weight: bold;
+  }
+
+  .contenido-header h2{
+    margin-bottom: 5rem;
+  }
+
+  .icono img{
+    height: 10rem;
+  }
+
+  .iconos-texto{
+    font-size: 2.3rem;
+}
+
+.icono p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.iconos-nosotros h3{
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 100;
+}
+
+.iconos-nosotros p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.bg-login{
+    margin-top: 2rem;
+    height: 50rem;
+    background-color: rgb(225, 230, 242);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.formulario-login{
+    height: 35rem;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+}
+
+.contenido-login{
+    margin-top: 3rem;
+}
+
+.contenido-registro{
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.contenido-login p{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contenido-registro p{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contenido-login h1{
+    font-size: 2.5rem;
+    color: rgba(53, 58, 61, 0.863);
+    font-weight: bolder;
+}
+
+.contenido-registro h1{
+    font-size: 2.5rem;
+    color: rgba(53, 58, 61, 0.863);
+    font-weight: bolder;
+}
+
+.contenido-login a{
+    color: rgba(64, 74, 80, 0.863);
+}
+
+.contenido-registro a{
+    color: rgba(64, 74, 80, 0.863);
+}
+
+.contenido-login input[type="submit"]{
+    margin-bottom: 2rem;
+}
+
+.contenido-registro input[type="submit"]{
+    margin-bottom: 2rem;
+}
+
+.contenido-home p{
+    letter-spacing: 1px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.negrita-nosotros{
+    font-weight: bold;
+    margin: 1rem 0 0 0;
+    font-size: 1.8rem;
+}
+
+.texto-nosotros{
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.nosotros-div{
+    margin-top: 2rem;
+}
+
+.nosotros-div h1{
+    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+    color: rgba(35, 37, 39, 0.863);
+}
+
+.imagen-contacto{
+    background-image: url(../img/cotiza.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 25rem;
+    background-color: black;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.imagen-contacto h2{
+    font-weight: bold;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.imagen-contacto p{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.footer{
+    background-color: rgb(65, 63, 78);
+    margin-top: 4rem;
+}
+
+.contenedor-footer{
+    padding-top: calc(4rem /2);
+    padding-bottom: calc(3rem /4);
+}
+.copyright{
+    text-align: center;
+    color: white;
+}
+
+.footer p{
+    font-size: 2rem;
+}
+
+.footer a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.footer a{
+    margin-right: 1rem;
+}
+
+.footer a:last-child{
+    margin-right: 0rem;
+}
+
+.footer a:hover{
+    color: rgb(72, 123, 234);
+}
+
+.pqrs{
+    text-align: left !important;
+
+}
+
+.pqrs input:not([type="submit"]),
+textarea,
+select{
+    padding: 1rem;
+    display: block;
+    width: 90%;
+    border: 1px solid grey;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.pqrs input[type="submit"]{
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.pqrs input[type="submit"]:hover{
+    background-color: rgb(98, 98, 98);
+}
+
+textarea{
+    height: 10rem;
+}
+
+select{
+    width: 62%;
+}
+
+.sesion{
+    text-align: right;
+    margin-right: 2rem;
+    margin-top: 3rem;
+    font-weight: bold;
+}
+
+.sesion a{
+    border-style: inset;
+    padding: .5rem 1.5rem;
+    color: rgb(12, 12, 12);
+    text-decoration: none;
+    border-color: rgb(136, 136, 136);
+    background-color: antiquewhite;
+}
+
+.sesion a:hover{
+    background-color: rgb(231, 210, 183);
+}
+
+.btn-cotizar{
+    display: block;
+    background-color: rgb(45, 93, 165);    
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.btn-cotizar:hover{
+    background-color: rgb(61, 116, 199);   
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    color: rgba(16, 91, 148, 0.863);
+    font-family: monospace;
+    font-size: 25px;
+    margin: 2.5rem auto 3rem auto;
+}
+
+th {
+    background-color: rgba(16, 91, 148, 0.863);
+    color: white;
+    text-align: center;
+    padding: .5rem;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+td{
+    padding: .5rem;
+    text-align: center;
+}
+
+.link-resumen{
+    color: rgba(16, 91, 148, 0.863);
+}
+
+.submit-admin{
+    width: 100% !important;
+}
+
+@media (min-width: 768px) {
+    .logo{
+        max-width: 60%;
+        float: right;
+        margin-right: 2rem;
+        margin-top: 1rem;
+    }
+    header{
+        width: 100%;
+        height: 9rem;
+    }
+    .botones{
+        float: right;
+        max-width: 90%;
+        margin: 0 4rem 0 auto;     
+    }
+    .boton{
+        display: inline-block;
+    }
+
+   .botones a:first-child{
+    margin-right: 1.7rem;
+    }
+
+    .iconos-nosotros{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;
+    }
+    .imagen-principal{
+         margin-top: 6rem;
+     }
+     .bg-login{
+        margin-top: 5.7rem;
+    }
+    .formulario-login{
+        width: 35rem;
+    }
+    .nosotros{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-bottom: 2rem;
+    }
+    .imagen-contacto h2{
+        font-size: 2.5rem;
+    }
+    
+    .imagen-contacto p{
+        font-size: 2rem;
+    }
+    .contenido-banner {
+        padding-top: 2rem;
+      }
+    input[type="submit"]{
+        width: 60%;
+    }
+    input{
+        width: 55%;
+    }
+    .contenido-login p{
+        width: 66%;
+    }
+    
+    .contenido-registro p{
+        width: 66%;
+    }
+    .pqrs input[type="submit"]{
+        width: 20%;
+        float: left;
+        margin-top: 2rem;
+    }
+    .pqrs input:not([type="submit"]),
+    textarea,
+    select{
+        width: 60%;
+    }
+    select{
+        width: 22%;
+    }
+    .pqrs{
+        margin-bottom: 7rem;
+    }
+    .sesion{
+        margin-right: 4rem;
+        margin-top: 1rem;
+    }
+    .contenido-home{
+        display: grid;
+        text-align: left;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: "izquierda derecha";
+        gap: 2rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .derecha{
+        grid-area: derecha;
+    }
+    .izquierda{
+        grid-area: izquierda;
+    }
+    .imagen-producto img{
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    .heading-cliente{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        position: relative;
+    }
+    .btn-cotizar-home{
+        width: 20%;
+        position: relative;
+        right: -25%;
+    }
+    .imagen_resumen{
+        width: 50%;
+    }
+}
