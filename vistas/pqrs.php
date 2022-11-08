@@ -1,6 +1,9 @@
 <?php
 session_start(); // Sesión iniciada
-require '../modelo/db.php'; // Conexión con la base de datos
+$mysqli = mysqli_init();
+$mysqli->ssl_set(NULL, NULL, "/etc/ssl/certs/ca-certificates.crt", NULL, NULL);
+$mysqli->real_connect($_ENV["HOST"], $_ENV["USERNAME"], $_ENV["PASSWORD"], $_ENV["DATABASE"]);
+$mysqli->close();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -48,7 +51,7 @@ require '../modelo/db.php'; // Conexión con la base de datos
         <label for=" telefono">Teléfono</label>
         <input type="number" placeholder="Tu teléfono" id="telefono" name="telefono" required">
 
-          <label for=" opciones">Tipo de consulta</label>
+        <label for=" opciones">Tipo de consulta</label>
         <select id="opciones" name="tipo" required>
           <option value="" disabled selected>-- Seleccione --</option>
           <option value="pregunta">Pregunta</option>
