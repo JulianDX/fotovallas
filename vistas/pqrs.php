@@ -1,9 +1,6 @@
 <?php
 session_start(); // Sesión iniciada
-$mysqli = mysqli_init();
-$mysqli->ssl_set(NULL, NULL, "/etc/ssl/certs/ca-certificates.crt", NULL, NULL);
-$mysqli->real_connect('us-east.connect.psdb.cloud','784rxx4ieqbjxyn1za4a','pscale_pw_fNx3q86KWJbgh8h9CE6O8MnGGyKqKFAxz7U3OOAm1ea','fotovallas');
-$mysqli->close();
+require '../modelo/db.php'; // Conexión con la base de datos
 ?>
 <!DOCTYPE html>
 <html lang="en">
