@@ -2,5 +2,5 @@ projectKey=fotovallas
 serverUrl=http://localhost:9000
 serverVersion=9.7.1.62043
 dashboardUrl=http://localhost:9000/dashboard?id=fotovallas
-ceTaskId=AYRaqavy-JK3tDMEopfr
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AYRaqavy-JK3tDMEopfr
+ceTaskId=AYRarN_J-JK3tDMEopf8
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYRarN_J-JK3tDMEopf8
