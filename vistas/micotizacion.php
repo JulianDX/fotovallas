@@ -1,5 +1,5 @@
 <?php
-require '../modelo/db.php'; // Conexión con la base de datos
+require_once '../modelo/db.php'; // Conexión con la base de datos
 session_start(); // Sesión iniciada
 if (!isset($_SESSION['user_id'])) {
     header('Location: ../index.php');
@@ -32,10 +32,10 @@ if (!isset($_SESSION['user_id'])) {
         </header>
         <div class="heading-cliente">
             <?php
-            include "../controlador/obtener_usuario.php"
+            include_once "../controlador/obtener_usuario.php"
             ?>
             <?php
-            include "../controlador/obtener_cotizacion.php"
+            include_once "../controlador/obtener_cotizacion.php"
             ?>
             <a class="btn-cotizar btn-cotizar-home" href="miscotizaciones.php">Mis Cotizaciones</a>
             <p class="sesion">Bienvenid@ <?php echo $user['nombre'] ?><br><br><a href="../controlador/logout.php">Cerrar sesión</a></p>
@@ -54,12 +54,12 @@ if (!isset($_SESSION['user_id'])) {
         <h1>Resumen Cotización - <?php echo $tipo ?></h1>
 
         <?php
-        include "../controlador/registro_cotizacion.php"
+        include_once "../controlador/registro_cotizacion.php"
         ?>
 
         <main class="contenedor seccion pqrs">
             <?php
-            include "../controlador/obtener_usuario.php"
+            include_once "../controlador/obtener_usuario.php"
             ?>
             <form class="formulario" enctype="multipart/form-data" method="POST">
                 <fieldset>

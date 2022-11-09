@@ -1,5 +1,5 @@
 <?php
-require '../modelo/db.php'; // Conexión con la base de datos
+require_once '../modelo/db.php'; // Conexión con la base de datos
 session_start(); // Sesión iniciada
 if (!isset($_SESSION['user_id'])) {
     header('Location: ../index.php');
@@ -31,7 +31,7 @@ if (isset($_GET['registrada'])) {
         </header>
         <div class="heading-cliente">
             <?php
-            include "../controlador/obtener_usuario.php"
+            include_once "../controlador/obtener_usuario.php"
             ?>
             <a class="btn-cotizar btn-cotizar-home" href="">Mis Cotizaciones</a>
             <p class="sesion">Bienvenid@ <?php echo $user['nombre'] ?><br><br><a href="../controlador/logout.php">Cerrar sesión</a></p>
@@ -47,7 +47,7 @@ if (isset($_GET['registrada'])) {
             }
             ?>
 
-            <table>
+            <table aria-describedby="Tabla de cotización">
                 <tr>
                     <th>Numéro cotización</th>
                     <th>Servicio</th>
@@ -55,7 +55,7 @@ if (isset($_GET['registrada'])) {
                     <th>Operación</th>
                 </tr>
                 <?php
-                include "../controlador/mostrar_cotizaciones.php"
+                include_once "../controlador/mostrar_cotizaciones.php"
                 ?>
             </table>
 

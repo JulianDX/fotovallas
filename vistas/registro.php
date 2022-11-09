@@ -1,6 +1,6 @@
 <?php
 
-require '../modelo/db.php'; // Conexión con la base de datos
+require_once '../modelo/db.php'; // Conexión con la base de datos
 session_start(); // Sesión iniciada
 
 ?>
@@ -32,7 +32,7 @@ session_start(); // Sesión iniciada
   <div class="bg-login">
     <div class="formulario-login">
       <?php
-      include "../controlador/registro_cliente.php"
+      include_once "../controlador/registro_cliente.php"
       ?>
       <div class="contenido-registro">
         <h1>Registro</h1>

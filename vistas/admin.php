@@ -1,5 +1,5 @@
 <?php
-require '../modelo/db.php'; // Conexión con la base de datos
+require_once '../modelo/db.php'; // Conexión con la base de datos
 session_start(); // Sesión iniciada
 if (!isset($_SESSION['user_id'])) {
     header('Location: ../index.php');
@@ -44,7 +44,7 @@ if(isset($_POST['submit'])){
         </header>
         <div>
             <?php
-            include "../controlador/obtener_usuario.php"
+            include_once "../controlador/obtener_usuario.php"
             ?>
             <p class="sesion">Bienvenid@ <?php echo $user['email'] ?><br><br><a href="../controlador/logout.php">Cerrar sesión</a></p>
         </div>
@@ -59,7 +59,7 @@ if(isset($_POST['submit'])){
             }
             ?>
 
-            <table>
+            <table aria-describedby="Tabla de administración">
                 <tr>
                     <th>Numéro cotización</th>
                     <th>Servicio</th>
@@ -67,7 +67,7 @@ if(isset($_POST['submit'])){
                     <th colspan="2">Operación</th>
                 </tr>
                 <?php
-                include "../controlador/obtener_usuario.php";
+                include_once "../controlador/obtener_usuario.php";
                 $email = $user['email'];
                 $consulta = "SELECT id, tipo, estado FROM cotizacion"; // Consulta
                 $result = mysqli_query($db, $consulta); // Envío de consulta a la base de datos

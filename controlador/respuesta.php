@@ -22,7 +22,7 @@
   <header id="main-header" style="margin-top:20px">
     <div class="row">
       <div class="col-lg-12 franja">
-        <img class="center-block" src="https://369969691f476073508a-60bf0867add971908d4f26a64519c2aa.ssl.cf5.rackcdn.com/btns/epayco/logo1.png">
+        <img class="center-block" src="https://369969691f476073508a-60bf0867add971908d4f26a64519c2aa.ssl.cf5.rackcdn.com/btns/epayco/logo1.png" alt="imagen-pago">
       </div>
     </div>
   </header>
@@ -34,11 +34,11 @@
       </div>
       <div class="col-lg-8 col-lg-offset-2 ">
         <div class="table-responsive">
-          <table class="table table-bordered">
+          <table class="table table-bordered" aria-describedby="Tabla de pago">
             <tbody>
               <tr>
-                <td>Referencia</td>
-                <td id="referencia"></td>
+                <th>Referencia</th>
+                <th id="referencia"></th>
               </tr>
               <tr>
                 <td class="bold">Fecha</td>
@@ -75,8 +75,7 @@
     <div class="row">
       <div class="container">
         <div class="col-lg-8 col-lg-offset-2">
-          <img src="https://369969691f476073508a-60bf0867add971908d4f26a64519c2aa.ssl.cf5.rackcdn.com/btns/epayco/pagos_procesados_por_epayco_260px.png" style="margin-top:10px; float:left"> <img src="https://369969691f476073508a-60bf0867add971908d4f26a64519c2aa.ssl.cf5.rackcdn.com/btns/epayco/credibancologo.png"
-            height="40px" style="margin-top:10px; float:right">
+          <img src="https://369969691f476073508a-60bf0867add971908d4f26a64519c2aa.ssl.cf5.rackcdn.com/btns/epayco/pagos_procesados_por_epayco_260px.png" style="margin-top:10px; float:left"> <img src="https://369969691f476073508a-60bf0867add971908d4f26a64519c2aa.ssl.cf5.rackcdn.com/btns/epayco/credibancologo.png" height="40px" style="margin-top:10px; float:right" alt="imagen-pago2">
         </div>
       </div>
     </div>

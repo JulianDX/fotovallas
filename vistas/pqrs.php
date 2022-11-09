@@ -1,6 +1,6 @@
 <?php
 session_start(); // Sesión iniciada
-require '../modelo/db.php'; // Conexión con la base de datos
+require_once '../modelo/db.php'; // Conexión con la base de datos
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,11 +28,11 @@ require '../modelo/db.php'; // Conexión con la base de datos
   <h1>Formulario PQRS</h1>
 
   <?php
-  include "../controlador/crear_pqrs.php"
+  include_once "../controlador/crear_pqrs.php"
   ?>
 
   <?php
-  include "../controlador/obtener_usuario.php"
+  include_once "../controlador/obtener_usuario.php"
   ?>
 
   <main class="contenedor seccion pqrs">

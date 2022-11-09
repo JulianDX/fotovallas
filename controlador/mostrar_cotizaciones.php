@@ -1,5 +1,5 @@
 <?php
-include "../controlador/obtener_usuario.php";
+include_once "../controlador/obtener_usuario.php";
 $email = $user['email'];
 $consulta = "SELECT id, tipo, estado FROM cotizacion WHERE email_contacto = '$email'"; // Consulta
 $result = mysqli_query($db, $consulta); // Envío de consulta a la base de datos
