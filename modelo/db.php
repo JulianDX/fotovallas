@@ -2,10 +2,10 @@
 
 <?php  
     
-            $server = 'us-east.connect.psdb.cloud';
-            $username = '784rxx4ieqbjxyn1za4a';
-            $password = 'pscale_pw_fNx3q86KWJbgh8h9CE6O8MnGGyKqKFAxz7U3OOAm1ea';
-            $dbname = 'fotovallas';       
+            $server = 'us-cdbr-east-06.cleardb.net';
+            $username = 'b7ee7f9643ea37';
+            $password = 'cbb803d8';
+            $dbname = 'heroku_4ec46ed82b71fb3';       
             try {
                 $db = mysqli_connect($server, $username, $password, $dbname);
                 $db->set_charset("utf8");
