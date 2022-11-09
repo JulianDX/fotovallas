@@ -34,7 +34,7 @@ if (isset($_SESSION['user_id'])) {
       <div class="imagen-principal">
         <div class="contenido-banner">
           <div class="contenido-header">
-            <h1>Prueba Fotovallas</h1>
+            <h1>Fotovallas</h1>
             <h2>Poniendo tus pensamientos en imprenta</h2>
             <a href="vistas/nosotros.php">Sobre Nosotros</a>
           </div>
