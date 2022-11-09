@@ -13,9 +13,10 @@ if (isset($_GET['actualizada'])) {
 if(isset($_POST['submit'])){
     $valor = $_POST['estado'];
     $id = $_POST['id'];
-    
-    $consulta = "UPDATE cotizacion SET estado ='$valor' WHERE id = '$id'"; // Consulta para obtener el número de la pregunta
-    $result = mysqli_query($db, $consulta); // Se envía la consulta a la base de datos
+    // Consulta para obtener el número de la pregunta
+    $consulta = "UPDATE cotizacion SET estado ='$valor' WHERE id = '$id'"; 
+    // Se envía la consulta a la base de datos
+    $result = mysqli_query($db, $consulta); 
     
     header('Location: admin.php?actualizada=true');
 }
@@ -32,7 +33,9 @@ if(isset($_POST['submit'])){
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap" rel="stylesheet" />
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap" 
+    rel="stylesheet" />
 </head>
 
 <body>
@@ -46,7 +49,10 @@ if(isset($_POST['submit'])){
             <?php
             include_once "../controlador/obtener_usuario.php"
             ?>
-            <p class="sesion">Bienvenid@ <?php echo $user['email'] ?><br><br><a href="../controlador/logout.php">Cerrar sesión</a></p>
+            <p class="sesion">Bienvenid@ <?php echo $user['email'] ?>
+            <br><br>
+            <a href="../controlador/logout.php">Cerrar sesión</a>
+        </p>
         </div>
         <br>
         <hr>
@@ -68,6 +74,7 @@ if(isset($_POST['submit'])){
                 </tr>
                 <?php
                 include_once "../controlador/obtener_usuario.php";
+                define("TD", "</td><td>");
                 $email = $user['email'];
                 $consulta = "SELECT id, tipo, estado FROM cotizacion"; // Consulta
                 $result = mysqli_query($db, $consulta); // Envío de consulta a la base de datos
@@ -80,9 +87,11 @@ if(isset($_POST['submit'])){
                     } else {
                         $tipo = "Scrolling";
                     }
-                    echo "<tr><td>" . $row["id"] . "</td><td>" . $tipo . "</td><td>"
-                        . "<input name='estado' type='text' id='estado' value='" .  $row['estado'] . "'><input name='id' type='hidden' id='estado' value='" .  $row['id'] . "'>" . "</td><td>"
-                        . "<a href='cotizacion_admin.php?n=$id' class='boton-cotizar'>Detalle</td>" . "<td><input class='submit-admin' type='submit' name='submit' value='Actualizar'></td></tr>";
+                    echo "<tr><td>" . $row["id"] . "</td><td>" . $tipo . TD
+                        . "<input name='estado' type='text' id='estado' value='" .  $row['estado'] .
+                         "'><input name='id' type='hidden' id='estado' value='" .  $row['id'] . "'>" . TD
+                        . "<a href='cotizacion_admin.php?n=$id' class='boton-cotizar'>Detalle</td>" . "<td>
+                        <input class='submit-admin' type='submit' name='submit' value='Actualizar'></td></tr>";
                     echo '</form>';
                 }
                 echo "</table>";

@@ -1,5 +1,6 @@
 <?php
 include_once "../controlador/obtener_usuario.php";
+define("TD", "</td><td>");
 $email = $user['email'];
 $consulta = "SELECT id, tipo, estado FROM cotizacion WHERE email_contacto = '$email'"; // Consulta
 $result = mysqli_query($db, $consulta); // Envío de consulta a la base de datos
@@ -17,8 +18,8 @@ while ($row = $result->fetch_assoc()) {
     } else {
         $estado = "Pagar";
     }
-    echo "<tr><td>" . $row["id"] . "</td><td>" . $tipo . "</td><td>"
-        . $row["estado"] . "</td><td>"
+    echo "<tr><td>" . $row["id"] . "</td><td>" . $tipo . TD
+        . $row["estado"] . TD
         . "<a href='micotizacion.php?n=$id' class='link-resumen'>" . $estado . "</td>";
 }
 echo "</table>";
