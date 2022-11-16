@@ -109,7 +109,7 @@ session_start(); // Sesión iniciada
         <nav class="navegacion">
           <a href="../index.php"> Inicio </a>
           <a href="nosotros.php"> Nosotros </a>
-          <a href="cotizar.php"> Cotizar </a>
+          <a href="login.php"> Cotizar </a>
           <a href="pqrs.php"> PQRS </a>
         </nav>
         <p class="copyright">

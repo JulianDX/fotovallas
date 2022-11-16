@@ -70,7 +70,7 @@ require_once '../modelo/db.php'; // Conexión con la base de datos
       <nav class="navegacion">
         <a href="../index.php"> Inicio </a>
         <a href="nosotros.php"> Nosotros </a>
-        <a href="cotizar.php"> Cotizar </a>
+        <a href="login.php"> Cotizar </a>
         <a href="pqrs.php"> PQRS </a>
       </nav>
       <p class="copyright">
