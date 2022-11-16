@@ -11,7 +11,7 @@ if (isset($_SESSION['user_id'])) {
 
     if ($verificar) {
         $user = $verificar; // Si la consulta retorna un objeto, se asigna a la variable de usuario
-    }else{
+    }else {
         $user = $verificar2;
     }
 }

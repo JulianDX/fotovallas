@@ -2,7 +2,7 @@
 require_once '../modelo/db.php'; // Conexión con la base de datos
 session_start(); // Sesión iniciada
 if (!isset($_SESSION['user_id'])) {
-    header('Location: ../index.php');
+    header('Location: ../login.php');
 }
 if (!isset($_GET['tipo'])) {
     header('Location: home.php');

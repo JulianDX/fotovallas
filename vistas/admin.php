@@ -4,6 +4,9 @@ session_start(); // Sesión iniciada
 if (!isset($_SESSION['user_id'])) {
     header('Location: ../index.php');
 }
+if (!isset($_SESSION['cargo'])) {
+    header('Location: ../index.php');
+}
 if (isset($_GET['registrada'])) {
     $msg = "Cotización creada con éxito";
 }

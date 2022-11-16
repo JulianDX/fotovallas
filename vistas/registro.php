@@ -39,12 +39,12 @@ session_start(); // Sesión iniciada
         <p>Bienvenid@ a Fotovallas, por favor regístrese para empezar a realizar sus cotizaciones.</p>
         <form method="POST">
           <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-          <input type="text" name="email" id="email" placeholder="Email">
+          <input type="email" name="email" id="email" placeholder="Email">
           <input type="password" name="password" id="password" placeholder="Contraseña">
           <input type="submit" name="submit" value="Registrarse">
         </form>
         <p>Al registrarse</p>
-        <p>Usted acepta <a href="">Términos y condiciones</a></p>
+        <p>Usted acepta Términos y condiciones</p>
       </div>
     </div>
   </div>
