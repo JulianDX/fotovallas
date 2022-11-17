@@ -9,7 +9,7 @@ if (!empty($_POST['submit'])) {
         $nombre = mysqli_real_escape_string($db, $_POST['nombre']);
         $email = mysqli_real_escape_string($db, $_POST['email']);
         $telefono = mysqli_real_escape_string($db, $_POST['telefono']);
-        if (strlen($telefono) > 6 || strlen($telefono) <= 10) {
+        if (strlen($telefono) > 6 || strlen($telefono) < 10) {
             echo "<p class='alerta2'>El número de télefono no es válido</p>";
         } else {
             $post_msg = htmlentities(strip_tags(@$_POST['mensaje']));
