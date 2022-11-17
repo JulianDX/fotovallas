@@ -10,9 +10,7 @@ if (!empty($_POST['submit'])) {
         and !empty($_POST['material']) and !empty($_POST['tamano'] and strlen($nombre_imagen)!=0)
     ) {
         $newstring = substr($nombre_imagen, -4);
-        if(!str_contains($newstring, 'png') || !str_contains($newstring, 'jpg' || !str_contains($newstring, 'jpeg'))){
-            echo "<p class='alerta2'>No se ha seleccionado un archivo de tipo imagen</p>";
-        }else{
+        if(str_contains($newstring, 'png') || str_contains($newstring, 'jpg' || str_contains($newstring, 'jpeg'))){
             $fecha = mysqli_real_escape_string($db, $_POST['fecha']);
             $nombre_empresa = mysqli_real_escape_string($db, $_POST['nombre_empresa']);
             $email = mysqli_real_escape_string($db, $_POST['email']);
@@ -63,6 +61,8 @@ if (!empty($_POST['submit'])) {
             $result = mysqli_query($db, $sql); // Se envía la consulta a la base de datos      
     
             header('Location: ../vistas/miscotizaciones.php?registrada=true');
+        }else{
+            echo "<p class='alerta2'>No se ha seleccionado un archivo de tipo imagen</p>";
         }
     } else {
         echo "<p class='alerta2'>Por favor rellene todos los campos</p>";
