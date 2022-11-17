@@ -13,7 +13,7 @@ if (!empty($_POST['submit'])) {
             echo "<p class='alerta2'>El número de télefono no es válido</p>";
         } else {
             $post_msg = htmlentities(strip_tags(@$_POST['mensaje']));
-            $post_msg = mysqli_real_escape_string($connect, $post_msg);
+            $post_msg = mysqli_real_escape_string($db, $post_msg);
             $post_msg_check = preg_replace('/\s+/', '', $post_msg);
             if ($post_msg_check == "") {
                 echo "<p class='alerta2'>Por favor ingrese un mensaje</p>";
