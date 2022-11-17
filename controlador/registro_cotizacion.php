@@ -3,10 +3,11 @@
 $precio = 0;
 
 if (!empty($_POST['submit'])) {
+    $nombre_imagen = $_FILES['foto']['name'];
     if (
         !empty($_POST['fecha']) and !empty($_POST['nombre_empresa'])
         and !empty($_POST['email']) and !empty($_POST['telefono'])
-        and !empty($_POST['material']) and !empty($_POST['tamano'])
+        and !empty($_POST['material']) and !empty($_POST['tamano'] and strlen($nombre_imagen)!=0)
     ) {
         $fecha = mysqli_real_escape_string($db, $_POST['fecha']);
         $nombre_empresa = mysqli_real_escape_string($db, $_POST['nombre_empresa']);
